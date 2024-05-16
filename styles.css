@@ -4,15 +4,13 @@ body {
 }
 
 @font-face {
-    font-family: 'CustomLeftFont';
-    src: url('path/to/custom-left-font.woff') format('woff');
-    /* Add more font formats (e.g., woff2, ttf) as needed */
+    font-family: 'ohno';
+    src: url('Regular.otf') ;
 }
 
 @font-face {
-    font-family: 'CustomRightFont';
-    src: url('path/to/custom-right-font.woff') format('woff');
-    /* Add more font formats (e.g., woff2, ttf) as needed */
+    font-family: 'right';
+    src: url('GT-Zirkon-Regular-Trial.otf');
 }
 
 .dialogue-container {
@@ -22,18 +20,20 @@ body {
 
 .left-text {
     text-align: left;
-    font-family: "CustomLeftFont", "Times New Roman", Times, serif;
+    font-family: "ohno";
     color: rgb(106, 214, 99);
     z-index: 2;
     margin-top: 2vh;
+    font-size: 2rem;
 }
 
 .right-text {
     text-align: right;
-    font-family: "CustomRightFont", Arial, sans-serif;
+    font-family: "right";
     color: rgb(109, 149, 218);
     z-index: 2;
     margin-top: 2vh;
+    font-size: 1.6rem;
 
 }
 
