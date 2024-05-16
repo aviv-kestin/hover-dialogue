@@ -1,0 +1,65 @@
+body {
+    overflow-x: hidden;
+    background-color: black; /* Set default background color to black */
+}
+
+@font-face {
+    font-family: 'CustomLeftFont';
+    src: url('path/to/custom-left-font.woff') format('woff');
+    /* Add more font formats (e.g., woff2, ttf) as needed */
+}
+
+@font-face {
+    font-family: 'CustomRightFont';
+    src: url('path/to/custom-right-font.woff') format('woff');
+    /* Add more font formats (e.g., woff2, ttf) as needed */
+}
+
+.dialogue-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-text {
+    text-align: left;
+    font-family: "CustomLeftFont", "Times New Roman", Times, serif;
+    color: rgb(106, 214, 99);
+    z-index: 2;
+    margin-top: 2vh;
+}
+
+.right-text {
+    text-align: right;
+    font-family: "CustomRightFont", Arial, sans-serif;
+    color: rgb(109, 149, 218);
+    z-index: 2;
+    margin-top: 2vh;
+
+}
+
+.hoverable {
+    transition: font-size 0.3s ease;
+}
+
+.hoverable:hover {
+    font-size: 1.4em; /* Increase font size on hover */
+}
+
+.image-left,
+.image-right {
+    position: fixed;
+    top: 50%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.image-left {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image-right {
+    right: 50%;
+    transform: translateX(50%);
+}
